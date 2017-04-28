@@ -1,10 +1,12 @@
 import os
-from flask import Flask, request, render_template, jsonify
+from flask import Flask, request, jsonify
+from flask_cors import CORS
 import random
 from test_data import data
 
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route("/search")
 def search():
