@@ -1,9 +1,10 @@
 import os
-from flask import Flask, request, jsonify
+from functools import wraps
+from flask import Flask, request, jsonify, current_app
 from flask_cors import CORS
+from flask_jsonpify import jsonify
 import random
 from test_data import data
-
 
 app = Flask(__name__)
 CORS(app)
