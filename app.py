@@ -1,6 +1,5 @@
 import os
-from functools import wraps
-from flask import Flask, request, jsonify, current_app
+from flask import Flask, request
 from flask_cors import CORS
 from flask_jsonpify import jsonify
 import random
